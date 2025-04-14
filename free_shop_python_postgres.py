@@ -4,7 +4,7 @@ from math import radians, cos, sin, asin, sqrt
 
 # === 1. Charger le CSV ===
 #Lecture des données
-df = pd.read_csv("/home/etienne/Documents/etienne/Documents/VDE Python/EData-P1-boutique-free-plus-proche/free_shop.csv", sep=";")
+df = pd.read_csv("free_shop.csv", sep=";")
 
 # === 2. Connexion PostgreSQL ===
 from decouple import config
