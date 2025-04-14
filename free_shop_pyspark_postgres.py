@@ -21,7 +21,7 @@ jdbc_url = f"jdbc:postgresql://{db_host}:{db_port}/{db_name}"
 # === 1. Créer la session Spark avec le driver PostgreSQL ===
 spark = SparkSession.builder \
     .appName("FreeShop") \
-    .config("spark.jars", "/home/etienne/Documents/etienne/Documents/VDE Python/EData-P1-boutique-free-plus-proche/postgresql-42.7.5.jar") \
+    .config("spark.jars", "postgresql-42.7.5.jar") \
     .getOrCreate()
 
 # === 2. Lire le fichier CSV ===
