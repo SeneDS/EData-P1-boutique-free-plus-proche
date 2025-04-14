@@ -8,7 +8,6 @@ df = pd.read_csv("/home/etienne/Documents/etienne/Documents/VDE Python/EData-P1-
 
 # === 2. Connexion PostgreSQL ===
 from decouple import config
-import psycopg2
 
 conn = psycopg2.connect(
     dbname=config('DB_NAME'),
